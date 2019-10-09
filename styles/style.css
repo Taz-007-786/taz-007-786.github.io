@@ -1,0 +1,34 @@
+p {
+  color: blue;
+  width: 700px;
+  border: 1px solid red;
+  text-align: center;
+}
+
+html {
+  font-size: 20px; /* px means "pixels": the base font size is now 20 pixels high  */
+  font-family: 'Barlow Condensed', sans-serif; /* Google fonts */
+}
+
+html {
+  background-color: #b8cecf;
+}
+
+body {
+  width: 800px;
+  margin: 2% auto;
+  background-color: #FF9500;
+  padding: 20px 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+p, li {
+  font-size: 20px;    
+  line-height: 1;
+  letter-spacing: 1px;
+}
