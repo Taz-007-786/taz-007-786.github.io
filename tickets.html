@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <link href="styles/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="scripts/main.js"></script>
+	<meta charset="utf-8">
+	<title>LEGEND PARK</title>
+</head>
+
+<body>
+
+	<div class="grid">
+		<header>
+				<!-- Nav -->
+				<nav class="navbar" id="nav1">
+					<a href="https://legendpark.com/" class="logo">
+						<img src="https://i.ytimg.com/vi/amP1bhAy41w/maxresdefault.jpg" alt="LEGEND PARK logo">
+					</a>
+					<ul class="nav-links">
+						<li class="nav-item" ><a href="index.html">HOME</a></li>
+						<li class="nav-item"><a href="days.html">DATES</a></li>
+						<li class="nav-item"><a class="current" href="#">TICKETS</a></li>
+						<li class="nav-item"><a href="gallery.html">GALLERY</a></li>
+						<li class="nav-item"><a href="rides.html">RIDES</a></li>
+					</ul>
+				</nav>
+		</header>
+
+<!-- sidebar-->
+		<aside class="sidebar-left">
+      <ul class="nobull">
+        <li>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </li>
+		</aside>
+
+		<!-- main content-->
+		<article class="article">
+		<form id="tickets" name="tickets" method="post" action="thankyou.html">
+		<p>Ticket Quantity:</p><br>
+		<input type="number" name="quantity"  id="quantity" min="1" max="10" onchange="calc()" required>
+		<p>Total Cost:</p><br>
+		<input name="cost" type="text" id="cost" title="cost" size="12" value="0" class="quantities" readonly/><br class="clearboth"/>
+		<p>Select Booking Date:</p><br>
+		<input type="date" name="date" max="2019-09-01" min="2019-01-02" required>
+		<input type="submit" value="Book">
+		</article>
+		<!-- sidebar--> 
+		<aside class="sidebar-right">
+			<ul class="nobull">
+        <li>
+          <a href="#" class="fa fa-pinterest"></a>
+          <a href="#" class="fa fa-snapchat-ghost"></a>
+          <a href="#" class="fa fa-reddit"></a>
+          <a href="#" class="fa fa-rss"></a>
+        </li>
+		</aside>
+
+		<!-- footer--> 
+		<footer>
+      <nav id="nav2">
+        <ul class="nobull">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+      <nav id="nav2">
+        <ul class="nobull">
+          <li><a href="#">Fastrack Tckets</a></li>
+          <li><a href="#">Groups</a></li>
+          <li><a href="#">School Trips</a></li>
+          <li><a href="#">Youth Groups</a></li>
+        </ul>
+		</footer>
+	</div>
+</body>
+</html>

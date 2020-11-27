@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+	<script src="scripts/main.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Thank you</title>
+
+</head>
+
+<body>
+	<h1>Thank you for your order</h1>
+	<p>Welcome to Legend Park </p>
+	<br/>
+	<p>You ordered <span id="thnkquantity"></span> for a total cost of <span id="thnkcost"></span>. Your visit date is <span id="thnkvisitdate"></span>.</p>
+	<script type="text/javascript">
+	document.getElementById("thnkvisitdate").innerHTML = localStorage.getItem("visitdate");
+	document.getElementById("thnkquantity").innerHTML = localStorage.getItem("quantity");
+	document.getElementById("thnkcost").innerHTML = localStorage.getItem("cost");
+	</script>
+</body>
+</html>
